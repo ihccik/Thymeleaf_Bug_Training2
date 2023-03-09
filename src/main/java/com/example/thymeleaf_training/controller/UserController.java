@@ -22,7 +22,6 @@ public class UserController {
         this.userService = userService;
     }
 
-    // TODO Error3
     @GetMapping("/registe")
     public String registerUser(Model model) {
         model.addAttribute("users", userService.getUsers());
